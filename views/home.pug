@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h4 App Home Page
+
+  if user
+    p Logged in using Facebook Account
+     ul
+       li Name: #{user.displayName}
+
+    h3 App specific Pages
+   
+  if !user
+    p Not Logged In
+      ul
+        li
+          h4 Login 
+          a(href="./auth/facebook") Use Facebook Login
+        li
+  p
