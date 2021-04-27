@@ -2,9 +2,6 @@ const passport = require('passport');
 const FacebookStrategy = require('passport-facebook').Strategy;
 require('dotenv').config();
 
-/* 
-   Notes
-*/
 
 // Simplest form of using FacebookStrategy
 // Pleas check other options on this strategy
